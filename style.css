@@ -2,6 +2,8 @@
 
 header {
   width: 100%;
+  position: absolute;
+  height: 50px;
 }
 
 .containerNav {
@@ -15,6 +17,7 @@ header {
   cursor: pointer;
   font-size: 1.15vw;
   padding: 14px;
+  justify-content: center;
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
@@ -22,21 +25,17 @@ header {
 }
 .containerNav  ul li {
   list-style: none;
-  display: inline-block;
+  display: inline;
   margin: 0 50px;
-  font-size: 15px;
+  font-size: 1.15vw;;
   position: relative;
 }
 .containerNav ul li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   text-transform: uppercase;
 }
-header {
-  position: absolute;
-  height: 50px;
-  width: 100%;
-}
+
 .mainFoto {
   width: 100%;
   height: 30%;
@@ -49,7 +48,7 @@ body {
 .AboutCompany {
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .start p {
@@ -69,24 +68,25 @@ body h2 {
 body h2:after {
   content: "";
   position: absolute;
-  height: 7%;
+  height: 6%;
   width: 0.4%;
   background: rgb(136, 138, 125);
 
   left: 17%;
 }
 .AboutCompany p {
-  width: 30%;
-  font-size: 1.25vw;
+  padding-left: 6.1%;
+  padding-right: 1%;
+  width: 40%;
+  font-size: 1.5vw;
   text-indent: 3ch;
   font-family: "Montserrat", sans-serif;
 }
-.AboutCompany img {
-  display: flex;
-  align-items: center;
-  border-radius: 25px;
-  align-items: center;
+.AboutCompany div img {
 
+  display: flex;
+  border-radius: 25px;
+ height: 90%;
  
 }
 body {
@@ -171,22 +171,25 @@ details[open] summary {
 footer {
   margin: 2% 0 0 0;
   display: flex;
-  background-color: rgb(119, 119, 119);
+  background-color: rgb(82, 82, 82);
   height: 100%;
   width: 100%;
   padding: 0 0 0;
+  flex-direction: column-reverse;
 }
-footer p {
-  font-size: 15px;
+.footer p {
+  font-size: 1.3vw;
   width: 100%;
-  margin-left: 20px;
+ text-align: center;
+}
+.footer {
+  display: flex;
+  width: 100%;
 }
 .Contact{
-    display: flex;
-    justify-content: center;
-    padding: 10% ;
-    
- 
+  display: flex;
+  justify-content: center;
+  padding: 10% ;
 }
 .contacts img{
   width:90%;
@@ -200,7 +203,7 @@ footer p {
 }
 
 section{
-  display: flex;
+ 
   flex-wrap: wrap;
 }
 .customs{
@@ -210,6 +213,9 @@ section{
   align-content: center;
   flex-direction: column;
   gap:20% ;
+}
+.footer{
+  text-align: center;
 }
 .customs strong{
   margin-left: 8%;
@@ -235,8 +241,9 @@ section{
 .footerNav nav ul li {
   list-style: none;
   display: inline-block;
-  margin: 0 15px;
-  font-size: 15px;
+  justify-content: center;
+  margin: 0 10px;
+  font-size: 1.1vw;
   position: relative;
 }
 .footerNav nav ul li a {
@@ -246,7 +253,6 @@ section{
 }
 .footer{
   display:flex;
-  
 }
 
 
@@ -289,6 +295,99 @@ section{
     padding: 10% 0 0 0;
    
   }
+  .AboutCompany p {
+    width: 70%;
+    font-size: 2vw;
+  }
+  .footerNav nav ul li{
+    font-size: 10px;
+    
 
+  }
+  .footerNav ul{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:320px)  {
+ html,body{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+ }
+ body h2::after{
+  height: 12px;
+}
+
+.box{
+  width: 500px;
+  height: 200px;
+}
+ .AboutCompany img{
+  width: 70%;
+  margin-left: 16%;
+ }
+ 
+ .logo{
+  font-size: 2vw;
+ display: flex;
+ text-align: center;
+ }
+ .containerNav ul li{
+display: none;
+ }
+ details{
+  width: 80%;
+  font-size: 2.5vw;
+}
+.dataCustoms p{
+  text-align: center;
+  margin:  0 2 0;
+}
+.customs strong{
+  text-align: center;
+  margin: 0;
+}
+.footerNav ul{
+  display: flex;
+  flex-direction: row;
+  padding: 3px 0 3px 0;
+}
+.footerNav nav ul li{
+  font-size: 3.7px;
+  padding: 0;
+  margin:6px 8px;
+  width: 40px;
+  display: flex;
+} 
+.footerNav nav{
+  
+  display: flex;
+  margin: 0;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+}
+.footer p {
+  margin-bottom: 5px;
+  align-items: center;
+  text-align: center;
+  margin:5;
+  padding: 0;
+}
+.start p{
+  height: 10px;
+  font-size: 2.5vw;
+}
+footer{
+  height: 25px;
+}
+.start{
+  max-height: 70px;
+}
+.start p{
+  max-height: 70px;
+}
 }
 
