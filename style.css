@@ -68,7 +68,7 @@ body h2 {
 body h2:after {
   content: "";
   position: absolute;
-  height: 6%;
+  height: 7%;
   width: 0.4%;
   background: rgb(136, 138, 125);
 
@@ -332,7 +332,9 @@ section{
  .logo{
   font-size: 2vw;
  display: flex;
+ padding-left: 50px;
  text-align: center;
+ justify-content: center;
  }
  .containerNav ul li{
 display: none;
