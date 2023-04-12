@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+header {
+  width: 100%;
+}
+
+.containerNav {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  cursor: pointer;
+  font-size: 1.15vw;
+  padding: 14px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  word-wrap: normal;
+}
+.containerNav  ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 50px;
+  font-size: 15px;
+  position: relative;
+}
+.containerNav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+header {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+}
+.mainFoto {
+  width: 100%;
+  height: 30%;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.AboutCompany {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.start p {
+  padding: 40px 0 0 0;
+  width: 100%;
+  min-height: 100px;
+  text-align: center;
+  font-size: 2vw;
+
+  font-family: "Montserrat", sans-serif;
+}
+body h2 {
+  padding-left: 18%;
+  font-size:3.1vw;
+  font-weight: normal;
+}
+body h2:after {
+  content: "";
+  position: absolute;
+  height: 7%;
+  width: 0.4%;
+  background: rgb(136, 138, 125);
+
+  left: 17%;
+}
+.AboutCompany p {
+  width: 30%;
+  font-size: 1.25vw;
+  text-indent: 3ch;
+  font-family: "Montserrat", sans-serif;
+}
+.AboutCompany img {
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  align-items: center;
+
+ 
+}
+body {
+  background: url("image/fon.jpg");
+  
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  padding: 3% 17%;
+  flex-direction: column;
+  align-items: center;
+}
+details {
+  display: flex;
+  width: 60%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+  font-size: 1.5vw;
+}
+details img {
+  width: 60%;
+  height: 60%;
+  padding: 0 20%;
+  border-radius: 20px;
+}
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
+}
+.Project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+}
+.box {
+  display: flex;
+  height: 700px;
+  width: 1300px;
+  gap: 1rem;
+}
+.bg1 {
+  background: url(image/compProj.JPG);
+}
+.bg2 {
+  background: url(image/compProj5.PNG);
+}
+.bg3 {
+  background: url(image/compProj3.jpg);
+}
+.bg4 {
+  background: url(image/compProj2.JPG);
+}
+.bg5 {
+  background: url(image/compProj4.jpg);
+}
+
+.box > div {
+  flex: 1;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+}
+.box > div:hover {
+  flex: 5;
+}
+footer {
+  margin: 2% 0 0 0;
+  display: flex;
+  background-color: rgb(119, 119, 119);
+  height: 100%;
+  width: 100%;
+  padding: 0 0 0;
+}
+footer p {
+  font-size: 15px;
+  width: 100%;
+  margin-left: 20px;
+}
+.Contact{
+    display: flex;
+    justify-content: center;
+    padding: 10% ;
+    
+ 
+}
+.contacts img{
+  width:90%;
+  height:100%;
+  border-radius: 10px;
+}
+.contacts{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section{
+  display: flex;
+  flex-wrap: wrap;
+}
+.customs{
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  gap:20% ;
+}
+.customs strong{
+  margin-left: 8%;
+  font-size: 2.5vw;
+  font-family: "Montserrat", sans-serif;
+}
+.dataCustoms p {
+  font-size: 1.4vw;
+  margin-left: 8%;
+  font-family: "Montserrat", sans-serif;
+}
+.dataCustoms ul li{
+  font-family: "Montserrat", sans-serif;
+  list-style-type: none;
+  font-size: 1.3vw;
+}
+.footerNav{
+  width: 45%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.footerNav nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 15px;
+  position: relative;
+}
+.footerNav nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.footer{
+  display:flex;
+  
+}
+
+
+@media screen and (max-width:768px){
+  body h2::after{
+    height: 20px;
+  }
+  .logo{
+    padding: 3%;
+    font-size: 7px;
+    width: 100%;
+  }
+  .AboutCompany img{
+    width: 400px;
+    height: 500px;
+  }
+  .box{
+    width: 500px;
+    height: 300px;
+  }
+  .footer p{
+    width: 100%;
+    text-align: start;
+    padding-top: 40px;
+  }
+  .dataCustoms p{
+    text-align: center;
+    margin: 0 1 0;
+  } 
+  .customs strong{
+    text-align: center;
+    margin: 0;
+  }
+  details{
+    width: 70%;
+    font-size: 2vw;
+  }
+  .start p {
+    margin: 0;
+    padding: 10% 0 0 0;
+   
+  }
+
+}
+
