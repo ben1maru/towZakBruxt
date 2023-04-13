@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 
 header {
   width: 100%;
@@ -7,93 +13,7 @@ header {
   height: 50px;
 }
 
-.menu-btn{
-  display: block;
-  align-items: center;
-  position: absolute;
-  margin: 10px 10px 10px 10px;
-  top: 0;
-  right:0;
-  width: 16px;
-  height: 10px;
-  cursor: pointer;
-  z-index: 1;
-}
- 
-.menu-btn > span,
-.menu-btn > span::before,
-.menu-btn > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #ffffff;
-  transition-duration: .25s;
-}
-.menu-btn > span::before {
-  content: '';
-  top: -8px;
-}
-.menu-btn > span::after {
-  content: '';
-  top: 8px;
-}
- 
-.menubox{
-  display: block;
-  position: absolute;
-  visibility: hidden;
-  top: 0;
-  left: 100%;
-  width: 32%;
-  height: 140px;
-  margin: 0;
- border-radius: 5px 0 0  5px;
-  padding: 20px 0;
-  list-style: none;
-  background-color: #c4bebe;
-  backdrop-filter: blur(15px);
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
-  transition-duration: .25s;
-}
- 
-.menu-item {
-  display: block;
-  padding: 10px 10px;
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 10px;
-  font-weight: 600;
-  text-decoration: none;
-  transition-duration: .25s;
-}
-.menu-item:hover {
-  background-color: #CFD8DC;
-}
 
- 
-#menu-toggle{
-  opacity: 0;
-}
- 
-#menu-toggle:checked ~ .menu-btn > span{
-  transform: rotate(45deg);
-}
-#menu-toggle:checked ~ .menu-btn > span::before{
-  top: 0;
-  transform: rotate(0);
-}
-#menu-toggle:checked ~ .menu-btn > span::after{
-  top: 0;
-  transform: rotate(90deg);
-}
-#menu-toggle:checked ~ .menubox{
-  visibility: visible;
-  left: 0;
-}
-.menu-btn{
-  display: none;
-}
 .containerNav {
   width: 85%;
   margin: auto;
@@ -128,11 +48,7 @@ header {
   width: 100%;
   height: 30%;
 }
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
+
 .AboutCompany {
   display: flex;
   width: 100%;
@@ -144,7 +60,7 @@ body {
   width: 100%;
   min-height: 100px;
   text-align: center;
-  font-size: 2vw;
+  font-size: 4.1vw;
 
   font-family: "Montserrat", sans-serif;
 }
@@ -312,7 +228,7 @@ section{
 }
 .dataCustoms p {
   font-size: 1.4vw;
-  margin-left: 8%;
+  margin-left: 8% 0 0 8%;
   font-family: "Montserrat", sans-serif;
 }
 .dataCustoms ul li{
@@ -321,7 +237,7 @@ section{
   font-size: 1.3vw;
 }
 .footerNav{
-  width: 45%;
+  width: 75%;
   margin: auto;
   display: flex;
   justify-content: space-around;
@@ -330,8 +246,8 @@ section{
   list-style: none;
   display: inline-block;
   justify-content: center;
-  margin: 0 10px;
-  font-size: 1.1vw;
+  margin: 0 20px;
+  font-size: 1.5vw;
   position: relative;
 }
 .footerNav nav ul li a {
@@ -342,9 +258,7 @@ section{
 .footer{
   display:flex;
 }
-.menubox{
-  margin-left:+20px;
-}
+
 
 
 @media screen and (max-width:768px){
@@ -410,6 +324,12 @@ section{
  body h2::after{
   height: 12px;
 }
+body h2{
+  padding-top: 10px;
+}
+.footer{
+  height: 50%;
+}
 
 .box{
   width: 500px;
@@ -436,9 +356,15 @@ display: none;
 }
 .dataCustoms p{
   text-align: center;
-  margin:  0 2 0;
+  margin:   0 2;
+  font-size: 3vw;
+}
+.dataCustoms ul li{
+  font-size: 2vw;
+  text-align: cen;
 }
 .customs strong{
+  font-size: 3.5vw;
   text-align: center;
   margin: 0;
 }
@@ -448,10 +374,10 @@ display: none;
   padding: 3px 0 3px 0;
 }
 .footerNav nav ul li{
-  font-size: 3.7px;
+  
   padding: 0;
   margin:6px 8px;
-  width: 40px;
+  width: 100%;
   display: flex;
 } 
 .footerNav nav{
@@ -466,28 +392,28 @@ display: none;
   margin-bottom: 5px;
   align-items: center;
   text-align: center;
+  font-size: 6px;
   margin:5;
   padding: 0;
 }
 .start p{
-  height: 10px;
-  font-size: 2.5vw;
+  font-size: 4.1vw;
 }
 footer{
   height: 25px;
 }
-.start{
+.start {
   max-height: 70px;
 }
-.start p{
-  max-height: 70px;
+.footerNav nav ul li {
+  list-style: none;
+  display: inline-block;
+  justify-content: center;
+  margin: 0 20px;
+  font-size: 70px;
+  position: relative;
 }
-.menu-btn{
-  display: flex;
-}
-.menubox{
-  margin-right: 60px;
-}
+
 }
 
 @media screen and (max-width:375px)  {
@@ -495,6 +421,9 @@ footer{
    padding: 0;
    margin: 0;
    width: 100%;
+  }
+  body h2{
+    padding-top: 10px;
   }
   body h2::after{
    height: 10px;
@@ -569,14 +498,12 @@ footer{
    max-height: 70px;
  }
  .start p{
-   max-height: 70px;
+   max-height: 4.1vw;
  }
  .menu-btn{
    display: flex;
  }
- .menubox{
-  
- }
+
 
 
  }
@@ -586,6 +513,9 @@ footer{
    padding: 0;
    margin: 0;
    width: 100%;
+  }
+  body h2{
+    padding-top: 3%;
   }
   body h2::after{
    height: 16px;
@@ -620,6 +550,7 @@ footer{
  }
  .customs strong{
    text-align: center;
+   
    margin: 0;
  }
  .footerNav ul{
@@ -628,7 +559,7 @@ footer{
    padding: 3px 0 3px 0;
  }
  .footerNav nav ul li{
-   font-size: 3.7px;
+   font-size: 1.1vw;
    padding: 0;
    margin:6px 8px;
    width: 40px;
@@ -651,7 +582,7 @@ footer{
  }
  .start p{
    height: 10px;
-   font-size: 2.5vw;
+   font-size: 4.1vw;
  }
  footer{
    height: 25px;
@@ -660,14 +591,9 @@ footer{
    max-height: 70px;
  }
  .start p{
-   max-height: 70px;
+   max-height: 4.1vw;
  }
- .menu-btn{
-   display: flex;
- }
- .menubox{
-  margin-left: 68%;
- }
+
  }
  
  
