@@ -79,8 +79,9 @@ body h2:after {
   left: 17%;
 }
 .AboutCompany p {
+  padding-top: 2.5%;
   padding-left: 6.1%;
-  padding-right: 1%;
+  padding-right: 3%;
   width: 40%;
   font-size: 1.5vw;
   text-indent: 3ch;
@@ -90,7 +91,8 @@ body h2:after {
 
   display: flex;
   border-radius: 25px;
- height: 90%;
+  height: 90%;
+  
  
 }
 body {
@@ -283,14 +285,24 @@ section{
     text-align: start;
     padding-top: 40px;
   }
-  .dataCustoms p{
-    text-align: center;
-    margin: 0 1 0;
-  } 
-  .customs strong{
-    text-align: center;
-    margin: 0;
-  }
+.dataCustoms p{
+      text-align: center;
+      padding-top: 8%;
+      font-size: 3vw;
+      padding-left: 3%;
+    }
+    .dataCustoms ul li{
+      font-size: 2vw;
+    margin-left: 8px;
+    
+    }
+    .customs strong{
+      padding-top: 3%;
+      padding-left: 3%;
+      font-size: 4.5vw;
+      text-align: center;
+      margin: 0;
+    }
   details{
     width: 70%;
     font-size: 2vw;
@@ -356,15 +368,19 @@ display: none;
 }
 .dataCustoms p{
   text-align: center;
-  margin:   0 2;
+  padding-top: 8%;
   font-size: 3vw;
+  padding-left: 3%;
 }
 .dataCustoms ul li{
   font-size: 2vw;
-  text-align: cen;
+margin-left: 8px;
+
 }
 .customs strong{
-  font-size: 3.5vw;
+  padding-top: 3%;
+  padding-left: 3%;
+  font-size: 4.5vw;
   text-align: center;
   margin: 0;
 }
@@ -379,9 +395,10 @@ display: none;
   margin:6px 8px;
   width: 100%;
   display: flex;
+  flex-direction: row;
 } 
 .footerNav nav{
-  
+  flex-direction: row;
   display: flex;
   margin: 0;
   height: 30px;
@@ -410,7 +427,7 @@ footer{
   display: inline-block;
   justify-content: center;
   margin: 0 20px;
-  font-size: 70px;
+  font-size: 10px;
   position: relative;
 }
 
@@ -445,21 +462,29 @@ footer{
   text-align: center;
   justify-content: center;
   }
-  .containerNav ul li{
- display: none;
-  }
+ 
   details{
    width: 80%;
    font-size: 2.5vw;
  }
  .dataCustoms p{
-   text-align: center;
-   margin:  0 2 0;
- }
- .customs strong{
-   text-align: center;
-   margin: 0;
- }
+  text-align: center;
+  padding-top: 8%;
+  font-size: 3vw;
+  padding-left: 3%;
+}
+.dataCustoms ul li{
+  font-size: 2vw;
+margin-left: 8px;
+
+}
+.customs strong{
+  padding-top: 3%;
+  padding-left: 3%;
+  font-size: 4.5vw;
+  text-align: center;
+  margin: 0;
+}
  .footerNav ul{
    display: flex;
    flex-direction: row;
@@ -545,14 +570,23 @@ footer{
    font-size: 2.5vw;
  }
  .dataCustoms p{
-   text-align: center;
-   margin:  0 2 0;
- }
- .customs strong{
-   text-align: center;
-   
-   margin: 0;
- }
+  text-align: center;
+  padding-top: 8%;
+  font-size: 3vw;
+  padding-left: 3%;
+}
+.dataCustoms ul li{
+  font-size: 2vw;
+margin-left: 8px;
+
+}
+.customs strong{
+  padding-top: 3%;
+  padding-left: 3%;
+  font-size: 4.5vw;
+  text-align: center;
+  margin: 0;
+}
  .footerNav ul{
    display: flex;
    flex-direction: row;
