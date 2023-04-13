@@ -540,7 +540,7 @@ margin-left: 8px;
    width: 100%;
   }
   body h2{
-    padding-top: 3%;
+    padding-top: 10%;
   }
   body h2::after{
    height: 16px;
@@ -577,9 +577,12 @@ margin-left: 8px;
 }
 .dataCustoms ul li{
   font-size: 2vw;
-margin-left: 8px;
-
 }
+
+.dataCustoms ul{
+  padding-top: -10px;
+}
+
 .customs strong{
   padding-top: 3%;
   padding-left: 3%;
@@ -596,9 +599,15 @@ margin-left: 8px;
    font-size: 1.1vw;
    padding: 0;
    margin:6px 8px;
-   width: 40px;
+   width: 50px;
    display: flex;
  } 
+ .footerNav nav ul li a{
+  font-size: 6px;
+  width: 70px;
+  padding: 0;
+  margin: 0;
+ }
  .footerNav nav{
    
    display: flex;
